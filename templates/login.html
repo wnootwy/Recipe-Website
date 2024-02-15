@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website that will contain all of your beloved recipes.">
+    <title>Grace's Recipes</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+  <body>
+    <main>
+        <h1>Grace's Recipes</h1> 
+        <h2 class="signin">Sign in</h2>
+        <form method="post" action="/index.html">
+          <label for="username">Username</label>
+          <input id="username" type="text" name="username" required />
+        
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" required />
+        
+          <input class="button" type="submit" value="Log in" />
+        </form>
+        
+    </main>
+  </body>
+  <footer>Website created by Parker Woods</footer>
+</html>
